@@ -465,7 +465,7 @@ body {
 /* line 21, ../sass/main.scss */
 header {
   padding: 5rem 9vw 5rem 9rem;
-  background-color: white;
+  background-color: linear-gradient(to bottom, #22bb9f 0%,#59d86e 100%);
 }
 @media screen and (max-width: 680px) {
   /* line 21, ../sass/main.scss */
