@@ -510,6 +510,19 @@ header {
   border: 2px solid blue;
 }
 
+@media screen and (max-width: 750px) {
+  /* line 95, ../sass/main.scss */
+  h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin: 0;
+  color: #ffffff;
+  }
+}
+
+
+
 /* line 64, ../sass/main.scss */
 h1 {
   font-family: 'Raleway', sans-serif;
