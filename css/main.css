@@ -521,7 +521,7 @@ h1 {
 /* line 70, ../sass/main.scss */
 h1 a {
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 /* line 74, ../sass/main.scss */
 h1 span {
