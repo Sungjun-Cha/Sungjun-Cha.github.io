@@ -479,6 +479,18 @@ header {
   }
 }
 
+@media screen and (max-width: 375px) {
+  /* line 21, ../sass/main.scss */
+  header {
+    padding-left: 2rem;
+  }
+  /* line 26, ../sass/main.scss */
+  header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
 /* line 34, ../sass/main.scss */
 .menu a {
   font-size: 1.1rem;
@@ -509,18 +521,6 @@ header {
 .menu a.real:hover {
   border: 2px solid blue;
 }
-
-@media screen and (max-width: 750px) {
-  /* line 95, ../sass/main.scss */
-  h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 3rem;
-  line-height: 4rem;
-  margin: 0;
-  color: #ffffff;
-  }
-}
-
 
 
 /* line 64, ../sass/main.scss */
