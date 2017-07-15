@@ -207,6 +207,8 @@ sup {
 /* line 202, ../sass/base/normalize.scss */
 img {
   border-style: none;
+  max-width:100%;
+  max-height:100%;
 }
 
 /**
