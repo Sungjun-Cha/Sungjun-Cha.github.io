@@ -1,28 +1,446 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Online Portfolio</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-    </head>
-    <body>
-        <header>
-            <h1><a href="index.html">Sungjun Cha</a> <span>A project by <a href="http://www.sungjuncha.com" class="author">Sungjun Cha</a></span></h1>
-            <div class="menu">
-                <!--
-                <a href="day1-10.html" class="real">1 - 10</a>
-                <a href="#">81 - 90</a>
-                <a href="#">91 - 100</a>
-                -->
-            </div>
-        </header>
 
-        <div class="homepage wrapper">
-            <img src="/img/career_path.png" frameborder="0" allowfullscreen>
+    <head>
+        <title>Sungjun Cha</title>
+
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+        <!-- Load the CDN first -->
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <!-- If CDN fails to load, serve up the local version -->
+        <script>
+            window.jQuery || document.write('<script src="js/jquery-3.2.1.js"><\/script>');
+        </script>
+
+        <!--<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"> 
+            </script> -->
+
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/ScrollMagic.js"></script>
+        <script type="text/javascript" src="js/animation.gsap.js"></script>
+        <script type="text/javascript" src="js/debug.addIndicators.js"></script>
+
+    </head>
+
+<body>
+    
+    <div class="outer">
+        
+        <div class="middle">
+            
+            <div class="content">
+                
+                <div id="logo">
+
+                    <svg id="name" width="408px" height="226px" viewBox="0 0 408 226" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <defs>
+
+                                <linearGradient id="skyGradient" x1="100%" y1="100%">
+
+                                    <stop offset="0" stop-color="lightblue" >
+
+                                        <animate attributeName ="stop-color" values="lightblue;blue;red;red;gray;red;red;purple;lightblue" dur="20s" repeatCount="indefinite" />
+
+                                    </stop>
+
+                                    <stop offset="1" stop-color="purple" >
+
+                                        <animate attributeName ="stop-color" values="purple;orange;purple;purple;gray;purple;purple;blue;purple" dur="14s" repeatCount="indefinite" />
+
+                                        <animate attributeName="offset" values=".95;.80;.60;.40;.20;.40;.60;.80;.95" dur="20s" repeatCount="indefinite" />
+
+                                    </stop>
+
+                                </linearGradient>
+
+                            </defs>
+                                
+
+                            <path fill="url(#skyGradient)" d="M0,49.3125 C0,56.203125 5.4375,66.65625 21.46875,66.65625 C34.265625,66.65625 43.03125,59.90625 43.03125,49.359375 C43.03125,39.1875 36.796875,35.578125 25.40625,32.4375 L18.375,30.515625 C9.75,28.171875 4.96875,24.75 4.96875,16.828125 C4.96875,8.34375 11.296875,2.484375 22.125,2.484375 C34.21875,2.484375 38.8125,9.796875 38.90625,15.46875 L41.671875,15.46875 C41.625,7.546875 35.203125,0 22.125,0 C9.609375,0 2.15625,6.890625 2.15625,16.78125 C2.15625,25.6875 7.5,30.375 16.6875,32.8125 L24.046875,34.78125 C34.5,37.59375 40.265625,40.828125 40.265625,49.5 C40.265625,57.890625 32.8125,64.171875 21.703125,64.171875 C7.3125,64.171875 2.859375,54.9375 2.765625,49.3125 L0,49.3125 Z M62.666667,1.5 L59.994792,1.5 L59.994792,43.265625 C59.994792,57.421875 68.057292,66.65625 82.401042,66.65625 C96.791667,66.65625 104.854167,57.421875 104.854167,43.265625 L104.854167,1.5 L102.135417,1.5 L102.135417,43.265625 C102.135417,55.96875 95.338542,64.078125 82.401042,64.078125 C69.604167,64.078125 62.666667,55.875 62.666667,43.265625 L62.666667,1.5 Z M128.145834,65.15625 L128.145834,6.28125 L128.333334,6.28125 L166.255209,65.15625 L169.067709,65.15625 L169.067709,1.5 L166.395834,1.5 L166.395834,60.375 L166.208334,60.375 L128.286459,1.5 L125.473959,1.5 L125.473959,65.15625 L128.145834,65.15625 Z M232.765626,17.578125 C232.296876,9.65625 225.500001,0 211.109376,0 C195.781251,0 187.671876,11.015625 187.671876,27.28125 L187.671876,38.578125 C187.671876,54.1875 194.656251,66.65625 211.578126,66.65625 C224.000001,66.65625 233.468751,59.90625 233.468751,46.96875 L233.468751,35.0625 L211.250001,35.0625 L211.250001,37.5 L230.984376,37.5 L230.984376,46.96875 C230.984376,58.078125 222.828126,64.21875 211.718751,64.21875 C196.765626,64.21875 190.343751,53.15625 190.343751,38.578125 L190.343751,27.28125 C190.343751,12.375 197.609376,2.4375 211.156251,2.4375 C224.281251,2.4375 229.718751,11.765625 230.281251,17.578125 L232.765626,17.578125 Z M246.072918,51.421875 C246.072918,57 249.541668,65.953125 261.729168,65.953125 C271.244793,65.953125 277.854168,60.46875 277.854168,48.75 L277.854168,1.5 L275.182293,1.5 L275.182293,48.703125 C275.182293,58.828125 269.463543,63.515625 261.822918,63.515625 C251.557293,63.515625 248.744793,56.015625 248.744793,51.421875 L246.072918,51.421875 Z M300.020835,1.5 L297.34896,1.5 L297.34896,43.265625 C297.34896,57.421875 305.41146,66.65625 319.75521,66.65625 C334.145835,66.65625 342.208335,57.421875 342.208335,43.265625 L342.208335,1.5 L339.489585,1.5 L339.489585,43.265625 C339.489585,55.96875 332.69271,64.078125 319.75521,64.078125 C306.958335,64.078125 300.020835,55.875 300.020835,43.265625 L300.020835,1.5 Z M365.500002,65.15625 L365.500002,6.28125 L365.687502,6.28125 L403.609377,65.15625 L406.421877,65.15625 L406.421877,1.5 L403.750002,1.5 L403.750002,60.375 L403.562502,60.375 L365.640627,1.5 L362.828127,1.5 L362.828127,65.15625 L365.500002,65.15625 Z M3.703125,141 C3.703125,128.34375 9.9375,116.4375 24.609375,116.4375 C37.078125,116.4375 43.734375,125.765625 43.734375,133.03125 L46.3125,133.03125 L46.3125,132.84375 C46.3125,124.40625 39.046875,114 24.609375,114 C7.96875,114 1.03125,127.03125 1.03125,141.5625 L1.03125,153.140625 C1.03125,167.8125 7.546875,180.65625 24.890625,180.65625 C38.484375,180.65625 46.875,171.796875 46.875,161.8125 L46.875,161.625 L44.296875,161.625 C44.296875,170.71875 36.65625,178.21875 24.890625,178.21875 C9.65625,178.21875 3.703125,166.265625 3.703125,153.65625 L3.703125,141 Z M108.276042,179.15625 L108.276042,115.5 L105.604167,115.5 L105.604167,144.421875 L67.354167,144.421875 L67.354167,115.5 L64.682292,115.5 L64.682292,179.15625 L67.354167,179.15625 L67.354167,146.859375 L105.604167,146.859375 L105.604167,179.15625 L108.276042,179.15625 Z M126.317709,179.15625 L123.505209,179.15625 L146.333334,115.5 L149.286459,115.5 L172.114584,179.15625 L169.255209,179.15625 L161.473959,157.125 L134.098959,157.125 L126.317709,179.15625 Z M147.927084,118.734375 L147.692709,118.734375 L134.895834,154.78125 L160.630209,154.78125 L147.927084,118.734375 Z"></path>
+
+                        </svg>
+
+
+                </div>
+                <!-- id logo end -->
+            </div>
         </div>
-    </body>
+    </div>
+    <div class="landing"></div>
+
+
+    <div class="index">
+        <div id="trigger_index"></div>
+        <div class="wrapper">
+
+            <div class="three">
+                <img class="img" src="img/cash_link.png" alt="">
+                <p class="year">2016</p><br>
+                <p class="title">Cashmallow</p><br>
+                <p class="short_desc">Foreign eXchange with the smallest fee</p>
+            </div>
+
+            <div class="three">
+                <img class="img" src="img/happy_link.png">
+                <p class="year">2015</p><br>
+                <p class="title">Happy Me</p><br>
+                <p class="short_desc">diet jounal for kids</p>
+            </div>
+
+            <div class="three">
+                <img class="img" src="img/mobi_link.png">
+                <p class="year">2014</p><br>
+                <p class="title">Mobi Toons</p><br>
+                <p class="short_desc">web-comics app in China</p>
+            </div>
+
+            <div class="three last">
+                <img class="img" src="img/haartle_link.png">
+                <p class="year">2013</p><br>
+                <p class="title">Haartle</p><br>
+                <p class="short_desc">social media for celeb's fans</p>
+            </div>
+
+            <div class="three">
+                <img class="img" src="img/pimfy_link.jpg" alt="">
+                <p class="year">2012</p><br>
+                <p class="title">Pimfy</p><br>
+                <p class="short_desc">local based social media</p>
+            </div>
+
+            <div class="three">
+                <img class="img" src="img/propose_link.jpg" alt="">
+                <p class="year">2010</p><br>
+                <p class="title">Propose Actually</p><br>
+                <p class="short_desc">app inspired by the movie Love Actually</p>
+            </div>
+
+            <div class="three">
+                <img class="img" src="img/iTaja_link.jpg" alt="">
+                <p class="year">2010</p><br>
+                <p class="title">iTaja Practice</p><br>
+                <p class="short_desc">smart phone typing practice</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section1">
+
+        <div class="wrapper clearfix">
+
+            <img id="cm_bill" src="img/cm_bill.png" alt="a hand holding a banknote">
+
+            <img id="cm_app" src="img/cm_app.png" alt="a hand holding a mobile phone">
+
+            <p id="cashmallow">cashmallow</p>
+            <br>
+            <p id="desc">It is a new way to get local cash without paying hidden charges when you travel abroad. Find a nearby store and request cash-out using this app. No more worries about credit card skimming!</p>
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="section2">
+
+        <div class="wrapper extended">
+
+            <img id="concept" src="img/cm_concept.png" alt="visual concept of corporate identity">
+
+
+            <div id="cm_logo"></div>
+            <img id="stack" src="img/cm_stack.png" alt="stacked layers">
+            <img id="pastel" src="img/cm_pastel.png" alt="pastel colors">
+            <img id="lights" src="img/cm_lights.png" alt="characteristics of lights">
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="section3">
+
+        <div class="wrapper extended">
+            <div id="trigger1"></div>
+            <div id="cashout_subject"></div>
+            <div id="cashout_step1" class="hide"></div>
+            <div id="cashout_step2" class="hide"></div>
+            <div id="cashout_step3" class="hide"></div>
+            <div id="cashout_step4" class="hide"></div>
+            <div id="cashout_step5" class="hide"></div>
+
+        </div>
+
+    </div>
+
+    <div class="section4 double">
+
+        <div class="wrapper">
+            <div id="wd_title"></div>
+            <div id="withdrawal_step1"></div>
+            <div id="wd_step1"></div>
+            <div id="withdrawal_step2"></div>
+            <div id="wd_step2"></div>
+            <div id="withdrawal_step3"></div>
+            <div id="wd_step3"></div>
+            <div id="withdrawal_step4"></div>
+            <div id="wd_step4"></div>
+            <div id="withdrawal_step5"></div>
+            <div id="wd_step5"></div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="section5">
+        <!-- happy me -->
+
+        <div class="wrapper">
+            <div id="trigger_happy"></div>
+            <div id="happy_me_views">
+
+                <div class="view img_1 slide"></div>
+                <div class="view img_2 slide"></div>
+                <div class="view img_3 slide"></div>
+                <div class="view img_4 slide"></div>
+                <div class="view img_5 slide"></div>
+
+            </div>
+            <div id="logo_happy"></div>
+            <div id="logo_me"></div>
+
+
+        </div>
+
+    </div>
+
+    <div class="section6 extended">
+        <!-- mobi toons -->
+
+        <div class="wrapper">
+
+            <div id="trigger_mobi"></div>
+            <object id="svg1" type="image/svg+xml" data="img/frame1.svg"></object>
+            <object id="svg2" type="image/svg+xml" data="img/frame2.svg"></object>
+            <object id="svg3" type="image/svg+xml" data="img/frame3.svg"></object>
+            <object id="svg4" type="image/svg+xml" data="img/frame4.svg"></object>
+
+            <div id="toons_contents">
+
+                <div class="frame">
+                    <div class="toons_1"></div>
+                    <div class="step">
+                        Tap 'daily webcomics' in the side menu.
+                    </div>
+
+                </div>
+
+                <div class="frame">
+                    <div class="toons_2"></div>
+                    <div class="step">
+                        Tap one of titles from 'Monday webcomics list'
+                    </div>
+
+                </div>
+
+                <div class="frame">
+                    <div class="toons_3"></div>
+                    <div class="step">
+                        Tap an episode you want to read.
+                    </div>
+
+                </div>
+
+                <div class="frame">
+
+                    <div class="toons_4"></div>
+                    <div class="step">
+                        Scroll vertically to read the episode.
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="section7">
+        <!-- haartle -->
+
+        <div class="wrapper">
+            <img id="haartle" src="img/haartle_views.png" alt="haartle app screenshots">
+
+        </div>
+
+    </div>
+
+    <div class="section8 double">
+        <!-- pimfy -->
+        <img id="pimfy_logo" src="img/pimfy_logo.png" alt="pimfy logo">
+        <div id="buildings"></div>
+        <div id="yard"></div>
+        <div id="grass"></div>
+        <div id="trigger_pimfy"></div>
+        <div class="wrapper positionfix">
+
+            <P class="center pimfy_head">Local Based Social Media</P>
+
+            <p class="center pimfy_text">Join local-based online communities
+                <br>and share your interests with
+                <br>your neighbors around you
+            </p>
+
+            <div id="iphone">
+
+                <div id="pimfy_frame">
+
+                    <div id="community_list"></div>
+
+                    <div id="feed_frame">
+
+                        <div id="news_feed"></div>
+                        <div id="navi_bar"></div>
+
+                    </div>
+
+                    <div id="feed_detail"></div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="section9 double_and_more">
+        <!-- propose actually -->
+
+        <div class="wrapper">
+            <div id="trigger_pa"></div>
+            <div id="title_bg">
+                <p id="propose">Propose</p>
+                <p id="actually">Actually</p>
+            </div>
+            <div id="trigger_sketch"></div>
+            <div id="ipad">
+                <div id="ipad_screen">
+                    <div class="flipbook-viewport">
+                        <div class="container">
+                            <div class="flipbook">
+
+                                <div class="page sketch1"></div>
+                                <div class="page"></div>
+                                <div class="page sketch2"></div>
+                                <div class="page"></div>
+                                <div class="page sketch3"></div>
+                                <div class="page"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pa_steps">
+                <div class="propose_step">
+                    <div class="propose_1"></div>
+                    <div class="propose_text">
+                        <span class="step_num">1</span><br>You can create and save every single proposal for your beloved ones.
+                    </div>
+                </div>
+                <div class="propose_step odd">
+                    <div class="propose_2"></div>
+                    <div class="propose_text">
+
+                        <span class="step_num">2</span><br>Attach photos to proposals from photo album in the iPad.
+
+                    </div>
+                </div>
+                <div class="propose_step">
+                    <div class="propose_3"></div>
+                    <div class="propose_text">
+
+                        <span class="step_num">3</span><br>You can also set BGM for each proposal from the music library of your iPad.
+
+                    </div>
+                </div>
+                <div class="propose_step odd">
+                    <div class="propose_4"></div>
+                    <div class="propose_text">
+
+                        <span class="step_num">4</span><br>When it's ready, propose actually like the movie!
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="section10">
+
+        <div class="wrapper">
+
+            <div id="taja-container">
+                <div id="taja_title">iTaja Practice</div>
+                <div id="taja_text">You can improve your typing speed and accuracy using this app.<br>It works in both ways you hold your phone. Daily practice report will help you see how you improve your typing skill. </div>
+
+            </div>
+            <div id="taja_usage"></div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="section11">
+
+        <div class="wrapper">
+
+            <P class="contact">CONTACT ME</P>
+            <p class="email">sungjun.cha@gmail.com</p>
+            <p class="message"> newly done works will be added soon,<br> hopefully.</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="js/vivus.min.js"></script>
+    <script src="js/turn.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+    
 </html>

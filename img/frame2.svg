@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="186px" height="322px" viewBox="0 0 186 322" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>pages</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="pages" stroke="#EA969F">
+            <g id="Page-2" transform="translate(1.000000, 1.000000)">
+                <path d="M0,3 L183.322,3" id="Stroke-13" stroke-width="3"></path>
+                <path d="M3,0 L3,321" id="Stroke-15" stroke-width="3"></path>
+                <path d="M180,321 L180,0" id="Stroke-21" stroke-width="3"></path>
+                <path d="M0,317 L183.322,317" id="Stroke-11" stroke-width="3"></path>
+                <path d="M0,15 L183.322,15" id="Stroke-1" stroke-width="2"></path>
+                <path d="M0,38 L182.5,38" id="Stroke-3" stroke-width="2"></path>
+                <path d="M32.6666667,35.4987672 L32.6666667,321" id="Stroke-17" stroke-width="2"></path>
+                <path d="M97.6666667,97.4959206 L97.6666667,319.512321" id="Stroke-20" stroke-width="2"></path>
+                <path d="M33.661,101 L184,101" id="Stroke-6" stroke-width="2"></path>
+                <path d="M181.503382,146 L33.661,146" id="Stroke-7" stroke-width="2"></path>
+                <path d="M31,192 L181.5,192" id="Stroke-8" stroke-width="2"></path>
+                <path d="M30.8087116,234.666667 L181.322,234.666667" id="Stroke-9" stroke-width="2" transform="translate(106.161000, 235.000000) rotate(-180.000000) translate(-106.161000, -235.000000) "></path>
+                <path d="M31,280 L181.507475,280" id="Stroke-10" stroke-width="2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
