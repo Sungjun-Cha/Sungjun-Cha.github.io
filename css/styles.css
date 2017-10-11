@@ -1072,27 +1072,62 @@ object#svg1 {
     background-repeat: no-repeat;
 }
 
+#bcard {
+    width: 440px;
+    height: 240px;
+    background-color: white;
+    position: relative;
+    top: 300px;
+    margin: auto;
+    padding: 24px;
+    box-sizing: border-box;
+    -webkit-box-shadow:0 0 40px rgba(0,0,0, 0.2);
+	-moz-box-shadow:0 0 40px rgba(0,0,0, 0.2);
+	-o-box-shadow:0 0 40px rgba(0,0,0, 0.2);
+	-ms-box-shadow:0 0 40px rgba(0,0,0, 0.2);
+	box-shadow:0 0 40px rgba(0,0,0, 0.2);
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -o-border-radius: 16px;
+    -ms-border-radius: 16px;
+    border-radius: 16px;   
+}
+
 .contact {
-    font-size: 32px;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 400;
     color: purple;
     display: block;
-    margin: 400px auto 0;
+    margin: 12px auto 0;
     letter-spacing: 2px;
 }
 
 .email {
-    font-size: 32px;
-    margin: 16px 0 0;
-    font-weight: 200;
-    letter-spacing: 2px;
-    
+    font-size: 28px;
+    margin: 6px 0 0;
+    font-weight: 400;
+    letter-spacing: 2px;   
 /*    font-style: italic;*/
 }
 
+#provider {
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
 .message {
-    margin: 20px 0 0;
-    font-size: 20px;
+    margin: 10px 0 0;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 300;
     letter-spacing: 1px;
+}
+
+#copyright {
+    margin: 64% auto 0;
+    text-align: center;
+    color: saddlebrown;
+    font-weight: 300;
+    
 }
