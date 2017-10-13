@@ -63,48 +63,151 @@ $(function () {
 //        name: "3"
 //    });
 
+    
+
+
+    var screens = document.getElementsByClassName("frame")
+    var tline = new TimelineLite();
     var frameplay = new ScrollMagic.Scene({
             triggerElement: '#trigger_mobi',
             offset: 0
         }).on('enter', function () {
+        
+            $('object#svg1').css('opacity', '1');
+                
+                var frame1 = new Vivus('svg1', {
+                    type: 'oneByOne',
+                    start: 'manual',
+                    duration: 90,
+                    animTimingFunction: Vivus.EASE_OUT
+                }).play(1);
+        
+            tline.to(screens[0], 0.3, {
+                    top: 100,
+                    opacity: 1,
+                    delay: 1,
+                    ease: Back.easeOut.config(1.2)
+                }, "+=1");
+    
+            setTimeout(function() {
+                $('object#svg2').css('opacity', '1');
+                var frame2 = new Vivus('svg2', {
+                    type: 'oneByOne',
+                    start: 'manual',
+                    duration: 90,
+                    animTimingFunction: Vivus.EASE_OUT
+                }).play(); 
+            }, 1900);
+            
+            tline.to(screens[1], 0.3, {
+                    top: 100,
+                    opacity: 1,
+                    delay: 1,
+                    ease: Back.easeOut.config(1.2)
+                }, "+=1");
+        
+            setTimeout(function() {
+                $('object#svg3').css('opacity', '1');
+                var frame2 = new Vivus('svg3', {
+                    type: 'oneByOne',
+                    start: 'manual',
+                    duration: 90,
+                    animTimingFunction: Vivus.EASE_OUT
+                }).play(); 
+            }, 3800);
+        
+            tline.to(screens[2], 0.3, {
+                    top: 100,
+                    opacity: 1,
+                    delay: 0.9,
+                    ease: Back.easeOut.config(1.2)
+                }, "+=1");
+        
+            setTimeout(function() {
+                $('object#svg4').css('opacity', '1');
+                var frame2 = new Vivus('svg4', {
+                    type: 'oneByOne',
+                    start: 'manual',
+                    duration: 90,
+                    animTimingFunction: Vivus.EASE_OUT
+                }).play(); 
+            }, 6000);
+            
+            tline.to(screens[3], 0.3, {
+                    top: 100,
+                    opacity: 1,
+                    delay: 0.9,
+                    ease: Back.easeOut.config(1.2)
+                }, "+=1");
+        
+        
+//            for (var s = 0; s < screens.length; s++) {
+//                
+//                     
+//            setTimeout(function() { 
+//                tline.from(screens[s], 0.3, {
+//                top: -300,
+//                opacity: 0,
+//                delay: 3,
+//                ease: Back.easeOut.config(1.2)
+//            }, "+=0.5");
+//                 } , 1000);   
+//                
+//            }
+            
+//            $('object#svg1').css('opacity', '1');
+//        
+//            var frame1 = new Vivus('svg1', {
+//                type: 'oneByOne',
+//                start: 'manual',
+//                duration: 100,
+//                animTimingFunction: Vivus.EASE_OUT
+//            }).play();
+        
+//            var frame2 = new Vivus('svg2', {
+//                type: 'oneByOne',
+//                start: 'manual',
+//                duration: 100,
+//                animTimingFunction: Vivus.EASE_OUT
+//            }).play();
+//
+//            var frame3 = new Vivus('svg3', {
+//                type: 'oneByOne',
+//                start: 'manual',
+//                duration: 150,
+//                animTimingFunction: Vivus.EASE_OUT
+//            }).play();
+//
+//            var frame3 = new Vivus('svg4', {
+//                type: 'oneByOne',
+//                start: 'manual',
+//                duration: 175,
+//                animTimingFunction: Vivus.EASE_OUT
+//            }).play();
+        
+    }).addTo(scrollMagicController);
+////            var toon_screens = document.getElementsByClassName("frame");
+////        
+////            for (var s = 0; s < toon_screens.length; s++) {
+////            
+////                var mobi_design_reveal = new ScrollMagic.Scene({
+////                    
+////                    }).setTween(toon_screens[s], (s + 0.3) * 0.3, {
+////            opacity: "0" });
+////            }
+//
+//        })
+//    
+//        .addTo(scrollMagicController);
 
-            $('object').css('opacity', '1');
-
-            var frame1 = new Vivus('svg1', {
-                type: 'oneByOne',
-                start: 'manual',
-                duration: 100,
-                animTimingFunction: Vivus.EASE_OUT
-            }).play();
-
-            var frame2 = new Vivus('svg2', {
-                type: 'oneByOne',
-                start: 'manual',
-                duration: 125,
-                animTimingFunction: Vivus.EASE_OUT
-            }).play();
-
-            var frame3 = new Vivus('svg3', {
-                type: 'oneByOne',
-                start: 'manual',
-                duration: 150,
-                animTimingFunction: Vivus.EASE_OUT
-            }).play();
-
-            var frame3 = new Vivus('svg4', {
-                type: 'oneByOne',
-                start: 'manual',
-                duration: 175,
-                animTimingFunction: Vivus.EASE_OUT
-            }).play();
-
-        })
-        .addTo(scrollMagicController);
-
+    
+    
+    
 //    frameplay.addIndicators({
 //        name: "4"
 //    });
-
+    
+    
     var pimfy_flow = new ScrollMagic.Scene({
             triggerElement: '#trigger_pimfy',
             offset: -700

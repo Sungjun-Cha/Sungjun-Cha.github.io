@@ -238,8 +238,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
 
 .section9 {
     background: #e7faff;
-    background-image: url("../img/pexels-photo-235994.jpg");
-    background-size: cover;
+    background-image: url("../img/paper_bg.jpg");
+    background-repeat: repeat;
     overflow: hidden;
 }
 
@@ -600,6 +600,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
 
 #toons_contents {
     padding-left: 80px;
+    position: relative;
+    top: -350px;
 }
 
 .frame {   
@@ -610,6 +612,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     background-repeat: no-repeat;
     margin-right: 20px;
     margin-top: 27px;
+    opacity: 0;
     
 }
 
@@ -685,7 +688,25 @@ object {
 }
 
 object#svg1 {
-    margin-left: 80px;
+    margin-left: 76px;
+}
+
+#mobi_logo {
+    background-image: url("../img/mobi_logo.png");
+    width: 240px;
+    height: 180px;
+    position: relative;
+    margin: 0 auto;
+    top: -200px;
+}
+
+.noti {
+    margin: 0 auto;
+    color: lightpink;
+    position: relative;
+    top: -150px;
+    font-weight: 300;
+    text-align: center;
 }
 
 #haartle {
