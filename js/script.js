@@ -27,7 +27,8 @@ $(function () {
     for (var j = 0; j < cards.length; j++) {
         var scene1 = new ScrollMagic.Scene({
                 triggerElement: "#trigger1",
-                offset: 100
+                offset: 100,
+                reverse: false
 
             })
             .setTween(cards[j], (j + 0.4) * 0.3, {
@@ -35,7 +36,8 @@ $(function () {
                 position: 'relative',
                 transform: "scale(1)",
                 ease: Back.easeOut.config(1.7),
-                y: -500
+                y: -500,
+                
             })
             .setPin("#trigger1")
             .addTo(scrollMagicController);
@@ -52,7 +54,8 @@ $(function () {
         var scene2 = new ScrollMagic.Scene({
 
             triggerElement: "#trigger_happy",
-            offset: -200
+            offset: -200,
+            reverse: false
         }).setTween(menues[m], (m + 0.3) * 0.3, {
             top: "0"
         }).setPin("#trigger_happy").addTo(scrollMagicController);
@@ -85,7 +88,7 @@ $(function () {
             tline.to(screens[0], 0.3, {
                     top: 100,
                     opacity: 1,
-                    delay: 1,
+                    delay: 0.7,
                     ease: Back.easeOut.config(1.2)
                 }, "+=1");
     
@@ -102,7 +105,7 @@ $(function () {
             tline.to(screens[1], 0.3, {
                     top: 100,
                     opacity: 1,
-                    delay: 1,
+                    delay: 0.9,
                     ease: Back.easeOut.config(1.2)
                 }, "+=1");
         
@@ -131,7 +134,7 @@ $(function () {
                     duration: 90,
                     animTimingFunction: Vivus.EASE_OUT
                 }).play(); 
-            }, 6000);
+            }, 6200);
             
             tline.to(screens[3], 0.3, {
                     top: 100,
@@ -140,69 +143,16 @@ $(function () {
                     ease: Back.easeOut.config(1.2)
                 }, "+=1");
         
+            frameplay.remove();
         
-//            for (var s = 0; s < screens.length; s++) {
-//                
-//                     
-//            setTimeout(function() { 
-//                tline.from(screens[s], 0.3, {
-//                top: -300,
-//                opacity: 0,
-//                delay: 3,
-//                ease: Back.easeOut.config(1.2)
-//            }, "+=0.5");
-//                 } , 1000);   
-//                
-//            }
-            
-//            $('object#svg1').css('opacity', '1');
-//        
-//            var frame1 = new Vivus('svg1', {
-//                type: 'oneByOne',
-//                start: 'manual',
-//                duration: 100,
-//                animTimingFunction: Vivus.EASE_OUT
-//            }).play();
         
-//            var frame2 = new Vivus('svg2', {
-//                type: 'oneByOne',
-//                start: 'manual',
-//                duration: 100,
-//                animTimingFunction: Vivus.EASE_OUT
-//            }).play();
-//
-//            var frame3 = new Vivus('svg3', {
-//                type: 'oneByOne',
-//                start: 'manual',
-//                duration: 150,
-//                animTimingFunction: Vivus.EASE_OUT
-//            }).play();
-//
-//            var frame3 = new Vivus('svg4', {
-//                type: 'oneByOne',
-//                start: 'manual',
-//                duration: 175,
-//                animTimingFunction: Vivus.EASE_OUT
-//            }).play();
+        
+
         
     }).addTo(scrollMagicController);
-////            var toon_screens = document.getElementsByClassName("frame");
-////        
-////            for (var s = 0; s < toon_screens.length; s++) {
-////            
-////                var mobi_design_reveal = new ScrollMagic.Scene({
-////                    
-////                    }).setTween(toon_screens[s], (s + 0.3) * 0.3, {
-////            opacity: "0" });
-////            }
-//
-//        })
-//    
-//        .addTo(scrollMagicController);
-
     
     
-    
+      
 //    frameplay.addIndicators({
 //        name: "4"
 //    });
@@ -248,7 +198,9 @@ $(function () {
      // Create Animation for 0.5s
     var tween = TweenMax.to('#title_bg', 0.5, {
         rotation: -10,
-        top: -120
+        top: -120,
+        reverse: false
+        
     });
 
     // Create the Scene and trigger when visible
