@@ -4,8 +4,17 @@ $(function () {
 
     // Init ScrollMagic Controller
     var scrollMagicController = new ScrollMagic.Controller();
-
-    var index = new ScrollMagic.Scene({
+    var thank = new ScrollMagic.Scene({
+        triggerElement: '#trigger_thank',
+        offset: 100,
+        reverse: true
+    }).on("start", function () {
+        
+				$("#scroll").text("Thank you!");
+        
+        }).addTo(scrollMagicController);
+    
+        var index = new ScrollMagic.Scene({
             triggerElement: '#trigger_index',
             offset: 0
         }).on('enter', function () {
@@ -36,7 +45,7 @@ $(function () {
                 position: 'relative',
                 transform: "scale(1)",
                 ease: Back.easeOut.config(1.7),
-                y: -500,
+                y: -500
                 
             })
             .setPin("#trigger1")

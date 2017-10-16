@@ -23,6 +23,7 @@ body {
     margin-left: auto;
     margin-right: auto; 
     width: 408px;
+    margin-bottom: -50px;
 /*    height: 440px;*/
 /*    background: orange;*/
 }
@@ -33,6 +34,20 @@ body {
     overflow: hidden;
 /*    padding-top: 140px;*/
 /*   background: olive; */
+}
+#trigger_thank {
+    min-height: 1px;
+}
+#scroll {
+    color: #555;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 40px;
+
 }
 
 #name {
@@ -76,6 +91,8 @@ body {
     line-height: px;
     color: #555;
 }
+
+
 
 .index {
     background: #fc6;
@@ -415,8 +432,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     height: 171px;
     width: 386px;
     position: relative;
-    top: 108px;
-    left: -20px;
+    top: 80px;
+    left: 48px;
 }
 
 #withdrawal_step1 {
@@ -426,8 +443,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    top: 60px;
-    left: 120px;
+    top: 100px;
+    left: 20px;
     filter: drop-shadow(0 12px rgba(116, 76, 61, 0.6));  
 }
 
@@ -439,8 +456,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     background-repeat: no-repeat;
     position: relative;
     display: block;
-    top: -98px;
-    left: 120px;
+    top: -54px;
+    left: 20px;
     filter: drop-shadow(0 12px rgba(116, 76, 61, 0.6));  
 }
 
@@ -451,7 +468,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    top: -232px;
+    top: -242px;
     margin: 0 auto;
     filter: drop-shadow(0 12px rgba(116, 76, 61, 0.6));  
 }
@@ -463,9 +480,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    top: -300px;
-    margin-left: auto;
-    right: 120px;
+    top: -370px;
+    margin-left: 100%;
+    right: 378px;
     filter: drop-shadow(0 12px rgba(116, 76, 61, 0.6));  
 }
 
@@ -476,9 +493,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    top: -450px;
-    margin-left: auto;
-    right: 120px;
+    top: -500px;
+    margin-left: 100%;
+    right: 378px;
     filter: drop-shadow(0 12px rgba(116, 76, 61, 0.6));  
 }
 
@@ -487,8 +504,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     width: 291px;
     height: 150px;
     position: relative;
-    top: -188px;
-    left: 438px;
+    top: -148px;
+    left: 338px;
 }
 
 #wd_step2 {
@@ -496,8 +513,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     width: 276px;
     height: 155px;
     position: relative;
-    top: -352px;
-    left: 438px;
+    top: -308px;
+    left: 338px;
 }
 
 #wd_step3 {
@@ -505,8 +522,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     width: 223px;
     height: 94px;
     position: relative;
-    top: -428px;
-    left: 612px;
+    top: -438px;
+    left: 618px;
 }
 
 #wd_step4 {
@@ -514,8 +531,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     width: 241px;
     height: 145px;
     position: relative;
-    top: -412px;
-    left: 262px;
+    top: -472px;
+    left: 388px;
 }
 
 #wd_step5 {
@@ -523,8 +540,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     width: 239px;
     height: 161px;
     position: relative;
-    top: -562px;
-    left: 262px;
+    top: -602px;
+    left: 392px;
 }
 
 
