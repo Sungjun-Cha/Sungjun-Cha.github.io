@@ -208,14 +208,15 @@ $(function () {
     var tween = TweenMax.to('#title_bg', 0.5, {
         rotation: -10,
         top: -120,
-        reverse: false
+        
         
     });
 
     // Create the Scene and trigger when visible
     var scene = new ScrollMagic.Scene({
             triggerElement: '#trigger_pa',
-            offset: -100 /* offset the trigger 150px below #scene's top */
+            offset: -100,
+            reverse: false/* offset the trigger 150px below #scene's top */
         })
         .setTween(tween)
         .setPin("#trigger_pa")
@@ -236,6 +237,88 @@ $(function () {
         .addTo(scrollMagicController)
 //        .addIndicators({name: "flip"});
 
+//    $('.bxslider').bxSlider({
+//        mode: 'horizontal',
+//        auto: true,
+//        pager: false,
+//        infiniteLoop: true,
+//        controls: false
+//        
+//  });
     
+//    var haartle_flow = new ScrollMagic.Scene({
+//            triggerElement: '#trigger_haartle',
+//            offset: 0,
+//            reverse: false
+//        }).on('enter', function () {
+//
+//            var haartle_ani = new TimelineLite();
+//        
+//            haartle_ani.from(".reveal1", 0.3, {
+//                opacity: 0,
+//                transform: "scale(0)",
+//                ease: Back.easeOut.config(1), y: -500
+//            }, "+=1");
+//        
+//            haartle_ani.from(".zoom1", 0.2, {
+//                opacity: 0,
+//                transform: "scale(0.5)",
+//                ease: Back.easeOut.config(2)
+//            }, "+=1");
+//            
+//            haartle_ani.to(".zoom1", 0.2, {
+//                    opacity: 0,
+//                    transform: "scale(0)",
+//                    ease: Back.easeOut.config(2)
+//                }, "+=0.5");
+//        
+//            haartle_ani.from(".reveal2", 0.5, {
+//                opacity: 0,
+//                transform: "scale(0.5)",
+//                ease: Back.easeOut.config(1.5), y: 100
+//            } );
+//        
+//            haartle_ani.from(".zoom2", 0.3, {
+//                opacity: 0,
+//                transform: "scale(0)",
+//                ease: Back.easeIn.config(1.5)
+//            }, "+=0.5");
+//        
+//            haartle_ani.to(".zoom2", 0.3, {
+//                opacity: 0,
+//                transform: "scale(0)",
+//                ease: Back.easeOut.config(1.5)
+//            }, "+=0.5");
+//        
+//            haartle_ani.from(".reveal3", 0.5, {
+//                opacity: 0,
+//                transform: "scale(0.5)",
+//                ease: Back.easeOut.config(1.5), y: 100
+//            });
+//        
+//            haartle_ani.from(".zoom3", 0.3, {
+//                opacity: 0,
+//                transform: "scale(0)",
+//                ease: Back.easeOut.config(1.5), y: -500
+//            }, "+=1");
+//            
+//            haartle_ani.to(".zoom3", 0.3, {
+//                opacity: 0,
+//                transform: "scale(0)",
+//                ease: Back.easeOut.config(1.5)
+//            }, "+=0.5");
+//        
+//            haartle_ani.from(".reveal4", 0.5, {
+//                opacity: 0,
+//                transform: "scale(0.5)",
+//                ease: Back.easeOut.config(1), y: 100
+//            });
+//        
+//            haartle_ani.play();
+//            
+//    
+//            
+//        })
+//        .addTo(scrollMagicController).addIndicators();
 
 });

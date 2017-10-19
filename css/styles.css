@@ -693,6 +693,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f48184', end
     line-height: 1.5em;
 
 }
+
 #trigger_mobi {
     min-height: 100px;
 }
@@ -724,6 +725,131 @@ object#svg1 {
     top: -150px;
     font-weight: 300;
     text-align: center;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* HAARTLE ----------- */
+
+
+
+#trigger_haartle {
+
+    min-height: 1px;
+    height: 240px;
+    
+}
+.view-container {
+    display: block;
+}
+.haartle_screenshot {
+    display: block;
+}
+
+.haartle_screenshot img {
+    width: 40%;
+    position: relative;
+    filter: drop-shadow(0 24px 20px rgba(214, 60, 104, 0.9));
+    display: inline-block;
+}
+
+.haartle_text {
+    display: inline-block;
+    position: relative;
+}
+
+.haartle_text img {
+    width: 56%;
+    position: relative;
+}
+
+.text1 {
+    top: 10px;
+    left: 0px;
+}
+
+.text2 {
+    top: -400px;
+    left: 210px;
+}
+
+.text3 {
+    top: -220px;
+    left: 520px;
+}
+
+.text4 {
+    top: -630px;
+    left: 738px;
+}
+
+.haartle_view1 {   
+    left: 70px;
+    top: -60px;
+    z-index: 1;
+}
+
+.haartle_view2 {
+    
+    left: 290px;
+    top: -470px;
+    
+}
+
+.haartle_view3 {
+    
+    left: 250px;
+    top: -500px;
+    z-index: 3;
+    
+}
+
+.haartle_view4 {
+    
+    left: 470px;
+    top: -910px;
+    
+}
+
+.haartle_zoom img {
+    width: 16%;
+    position: relative;
+    filter: drop-shadow(0 28px 20px rgba(0, 0, 0, 0.4));
+}
+
+.zoom1 {
+
+    top: -1320px;
+    left: 150px;
+    z-index: 2;
+    opacity: 0;
+    
+}
+
+.zoom2 {
+
+    top: -1310px;
+    left: 300px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.zoom3 {
+
+    top: -1280px;
+    left: 330px;
+    z-index: 4;
+    opacity: 0;
+}
+
+.haartle_title {
+    width: 20%;
+    position: relative;
+    top: -1320px;
+    left: 40px;
+    filter: drop-shadow(0 14px 10px rgba(214, 60, 104, 0.9));
 }
 
 #haartle {
