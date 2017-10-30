@@ -1,0 +1,662 @@
+<!doctype html>
+<html>
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="description" content="Things he has been doing so far">
+        <meta name="keywords" content="UI,GUI,UX,Interaction,Mobile,Web">
+        <meta name="author" content="Sungjun Cha">
+        
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Things he has been doing so far">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Sungjun Cha">
+        <meta property="og:image" content="...">
+        <meta property="og:url" content="http://sungjun-cha.github.io">
+        
+        <title>Sungjun Cha</title>
+
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+        
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!-- Load the CDN first -->
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <!-- If CDN fails to load, serve up the local version -->
+        <script>
+            window.jQuery || document.write('<script src="js/jquery-3.2.1.js"><\/script>');
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/ScrollMagic.js"></script>
+        <script type="text/javascript" src="js/animation.gsap.js"></script>
+        <script type="text/javascript" src="js/debug.addIndicators.js"></script>
+        
+        <style>
+            
+            #nav {
+                position:fixed;
+                height: 84px;
+            /*    display: block;*/
+                top: 0px;
+                width: 100%;
+                z-index: 9999;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+
+            .nav_wrapper {
+                display: block;
+                width: 1024px;
+                margin: auto;
+            }
+
+
+
+            #nav div a.home {
+                display: inline-block;
+            /*    width: 360px;*/
+                height: 84px;
+            /*    padding-left: 20px;*/
+                line-height: 84px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: black;
+                margin-left: 20px;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+            /*    overflow: hidden;*/
+                display: inline-block;
+                position: relative;
+                top: -60px;
+                float: right;
+                margin-right: 0px;
+                margin-top: 0px;
+            }
+
+            ul.link li {
+                margin-right: 12px;
+                display: inline-block;
+                list-style-type: none;
+            }
+
+            ul.link li a {
+
+                border-radius: 36px;
+            /*    display: block;*/
+                color: black;
+                text-align: center;
+                padding: 12px 16px;
+                text-decoration: none;
+            /*    width: 120px;*/
+                height: 36px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                line-height: 36px;
+                border: 2px solid rgba(0,0,0, 0);
+
+
+            }
+
+            /* Change the link color to #111 (black) on hover */
+            ul.link li a:hover {
+/*                background-color: white;*/
+                border: 2px solid rgba(0,0,0, 0.5);
+                color: black;
+            }
+
+            li a:active {
+/*                background-color: white;*/
+                border: 2px solid white;
+                color: black;
+            }
+
+            ul.link li a.currentPage {
+                background-color: deepskyblue;
+                border: 1px solid deepskyblue;
+                color: black;
+                cursor: default;
+            }
+
+            .ixd_title {
+                width: 60%;
+                margin-top: 300px;
+                margin-left: 0px;
+                color: black;
+                font-size: 56px;
+                font-weight: bold;
+            }
+
+            .intro {
+                width: 54%;
+                margin-left: 4px;
+                display:inline-block;
+                font-size: 18px;
+                line-height: 1.5em;
+            }
+        
+        </style>
+
+    </head>
+
+<body>
+    
+    <div id="nav">
+            
+            <div class="nav_wrapper">
+                
+                <div>
+                    
+                    <a class="home" href="/index.html">SUNGJUN CHA</a>
+                
+                </div>
+                
+                <ul class="link">
+                    
+                    <li>
+                        <a class="currentPage" href="/gui.html">GUI</a>
+                    </li>
+                    <li>
+                        <a href="/interaction.html">INTERACTION</a>
+                    </li>
+                    
+                </ul>
+                      
+            </div>
+            
+        </div>
+    
+    <div class="landing">
+        
+        <div class="wrapper">
+            
+            
+                
+                <h1 class="ixd_title">
+                    I have designed apps and websites<br>since 2010.
+                </h1>
+                
+            <p class="intro">
+                Here are most of works I have done since 2010. mostly mobile apps and websites I designed will be posted later. Now that I am also interested in coding, I wanted to complete my website by myself and this is what I accomplished so far. Plus, on the interation design page, you can see some prototypes that I made it work by coding.
+                <br><br>Scroll down to see more.
+            </p>
+
+                
+
+        </div>
+    
+    
+    
+    
+    </div>
+
+
+    <div class="index">
+        <div id="trigger_index"></div>
+        <div class="wrapper">
+
+            <div class="three">
+                <img class="img" src="img/cash_link.png" alt="">
+                
+                <p class="title">Cashmallow</p><br>
+                <p class="short_desc">Foreign eXchange with the smallest fee</p>
+                <p class="year">2016</p><br>
+            </div>
+
+            <div class="three">
+                <img class="img" src="img/happy_link.png">
+                
+                <p class="title">Happy Me</p><br>
+                <p class="short_desc">diet jounal for kids</p>
+                <p class="year">2015</p><br>
+                
+            </div>
+
+            <div class="three">
+                <img class="img" src="img/mobi_link.png">
+                
+                <p class="title">Mobi Toons</p><br>
+                <p class="short_desc">web-comics app in China</p>
+                <p class="year">2014</p><br>
+            </div>
+
+            <div class="three last">
+                <img class="img" src="img/haartle_link.png">
+                
+                <p class="title">Haartle</p><br>
+                <p class="short_desc">social media for celeb's fans</p>
+                <p class="year">2013</p><br>
+            </div>
+
+            <div class="three">
+                <img class="img" src="img/pimfy_link.jpg" alt="">
+                
+                <p class="title">Pimfy</p><br>
+                <p class="short_desc">local based social media</p>
+                <p class="year">2012</p><br>
+            </div>
+
+            <div class="three">
+                
+                <img class="img" src="img/propose_link.jpg" alt="">  
+                <p class="title">Propose Actually</p><br>
+                <p class="short_desc">app inspired by the movie Love Actually</p>
+                <p class="year">2010</p><br>
+                
+            </div>
+
+            <div class="three">
+                
+                <img class="img" src="img/iTaja_link.jpg" alt="">
+                
+                <p class="title">iTaja Practice</p><br>
+                <p class="short_desc">smart phone typing practice</p>
+                <p class="year">2010</p><br>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section1">
+
+        <div class="wrapper clearfix">
+
+            <img id="cm_bill" src="img/cm_bill.png" alt="a hand holding a banknote">
+
+            <img id="cm_app" src="img/cm_app.png" alt="a hand holding a mobile phone">
+
+            <p id="cashmallow">cashmallow</p>
+            <br>
+            <p id="desc">It is a new way to get local cash without paying hidden charges when you travel abroad. Find a nearby store and request cash-out using this app. No more worries about credit card skimming!</p>
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="section2">
+
+        <div class="wrapper extended">
+
+            <img id="concept" src="img/cm_concept.png" alt="visual concept of corporate identity">
+
+
+            <div id="cm_logo"></div>
+            <img id="stack" src="img/cm_stack.png" alt="stacked layers">
+            <img id="pastel" src="img/cm_pastel.png" alt="pastel colors">
+            <img id="lights" src="img/cm_lights.png" alt="characteristics of lights">
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="section3">
+
+        <div class="wrapper extended">
+            <div id="trigger1"></div>
+            <div id="cashout_subject"></div>
+            <div id="cashout_step1" class="hide"></div>
+            <div id="cashout_step2" class="hide"></div>
+            <div id="cashout_step3" class="hide"></div>
+            <div id="cashout_step4" class="hide"></div>
+            <div id="cashout_step5" class="hide"></div>
+
+        </div>
+
+    </div>
+
+    <div class="section4 double">
+
+        <div class="wrapper">
+            <div id="wd_title"></div>
+            <div id="withdrawal_step1"></div>
+            <div id="wd_step1"></div>
+            <div id="withdrawal_step2"></div>
+            <div id="wd_step2"></div>
+            <div id="withdrawal_step3"></div>
+            <div id="wd_step3"></div>
+            <div id="withdrawal_step4"></div>
+            <div id="wd_step4"></div>
+            <div id="withdrawal_step5"></div>
+            <div id="wd_step5"></div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="section5">
+        <!-- happy me -->
+
+        <div class="wrapper">
+            <div id="trigger_happy"></div>
+            <div id="happy_me_views">
+
+                <div class="view img_1 slide"></div>
+                <div class="view img_2 slide"></div>
+                <div class="view img_3 slide"></div>
+                <div class="view img_4 slide"></div>
+                <div class="view img_5 slide"></div>
+
+            </div>
+            <div id="logo_happy"></div>
+            <div id="logo_me"></div>
+
+
+        </div>
+
+    </div>
+
+    <div class="section6">
+        <!-- mobi toons -->
+
+        <div class="wrapper extended">
+
+            <div id="trigger_mobi"></div>
+            <object id="svg1" type="image/svg+xml" data="img/frame1.svg"></object>
+            <object id="svg2" type="image/svg+xml" data="img/frame2.svg"></object>
+            <object id="svg3" type="image/svg+xml" data="img/frame3.svg"></object>
+            <object id="svg4" type="image/svg+xml" data="img/frame4.svg"></object>
+
+            <div id="toons_contents">
+
+                <div class="frame">
+                    <div class="toons_1"></div>
+                    <div class="step">
+                        Tap 'daily webcomics' in the side menu.
+                    </div>
+
+                </div>
+
+                <div class="frame">
+                    <div class="toons_2"></div>
+                    <div class="step">
+                        Tap one of titles from 'Monday webcomics list'
+                    </div>
+
+                </div>
+
+                <div class="frame">
+                    <div class="toons_3"></div>
+                    <div class="step">
+                        Tap an episode you want to read.
+                    </div>
+
+                </div>
+
+                <div class="frame">
+
+                    <div class="toons_4"></div>
+                    <div class="step">
+                        Scroll vertically to read the episode.
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="mobi_logo"></div>
+            <p class="noti">Images of webcomics are used only for UI presentation purposes.</p>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="section7"><!-- haartle -->
+        
+            <div class="wrapper extended">
+                
+                <div id="trigger_haartle"></div>
+                
+                
+                <div class="view-container reveal1">
+                    
+                    <div class="haartle_text">
+
+                        <img class="text1" src="img/haartle_text_top100.png" alt="haartle top 100">
+
+                    </div>
+
+                    <div class="haartle_screenshot">
+
+                        <img class="haartle_view1" src="img/haartle_top100.png" alt="haartle app image">
+
+                    </div>
+                    
+                </div>
+                
+                <div class="view-container reveal2">
+                    
+                    <div class="haartle_text">
+                        
+                        <img class="text2" src="img/haartle_text_post.png" alt="haartle news feed">
+                        
+                    </div>
+                    
+                    <div class="haartle_screenshot">
+                   
+                        <img class="haartle_view2" src="img/haartle_newsfeed.png" alt="haartle app image">
+                    
+                    </div>
+                    
+                </div>
+                
+                <div class="view-container reveal3">
+                    
+                    <div class="haartle_text">
+                        
+                        <img class="text3" src="img/haartle_text_fanpage.png" alt="haartle fan page">
+                        
+                    </div>
+                    
+                    <div class="haartle_screenshot">
+                        
+                        <img class="haartle_view3" src="img/haartle_fanpage.png" alt="haartle app image">
+                        
+                    </div>
+                
+                </div>
+                
+                <div class="view-container reveal4">
+                    
+                    <div class="haartle_text">
+                        
+                        <img  class="text4" src="img/haartle_text_backIssues.png" alt="haartle back issues">
+                        
+                    </div>
+                    
+                    <div class="haartle_screenshot">
+                        
+                        <img class="haartle_view4" src="img/haartle_backissues.png" alt="haartle app image">
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="haartle_zoom"><img class="zoom1" src="img/haartle_zoom1.png" alt="button zoomed"></div>
+                
+                <div class="haartle_zoom"><img class="zoom2" src="img/haartle_zoom2.png" alt="button zoomed"></div>
+                
+                <div class="haartle_zoom"><img class="zoom3" src="img/haartle_zoom3.png" alt="button zoomed"></div>
+                
+                <div ><img class="haartle_title" src="img/haartle_title.png" alt="haarlt icon image"></div>
+                
+                
+                
+            </div>
+    </div>
+
+    <div class="section8 double">
+        <!-- pimfy -->
+        <img id="pimfy_logo" src="img/pimfy_logo.png" alt="pimfy logo">
+        <div id="buildings"></div>
+        <div id="yard"></div>
+        <div id="grass"></div>
+        <div id="trigger_pimfy"></div>
+        <div class="wrapper positionfix">
+
+            <P class="center pimfy_head">Local Based Social Media</P>
+
+            <p class="center pimfy_text">Join local-based online communities
+                <br>and share your interests with
+                <br>your neighbors around you
+            </p>
+
+            <div id="iphone">
+
+                <div id="pimfy_frame">
+
+                    <div id="community_list"></div>
+
+                    <div id="feed_frame">
+
+                        <div id="news_feed"></div>
+                        <div id="navi_bar"></div>
+
+                    </div>
+
+                    <div id="feed_detail"></div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="section9 double_and_more">
+        <!-- propose actually -->
+
+        <div class="wrapper">
+            <div id="trigger_pa"></div>
+            <div id="title_bg">
+                <p id="propose">Propose</p>
+                <p id="actually">Actually</p>
+            </div>
+            <div id="trigger_sketch"></div>
+            <div id="ipad">
+                <div id="ipad_screen">
+                    <div class="flipbook-viewport">
+                        <div class="container">
+                            <div class="flipbook">
+
+                                <div class="page sketch1"></div>
+                                <div class="page"></div>
+                                <div class="page sketch2"></div>
+                                <div class="page"></div>
+                                <div class="page sketch3"></div>
+                                <div class="page"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pa_steps">
+                <div class="propose_step">
+                    <div class="propose_1"></div>
+                    <div class="propose_text">
+                        <span class="step_num">1</span><br>You can create and save every single proposal for your beloved ones.
+                    </div>
+                </div>
+                <div class="propose_step odd">
+                    <div class="propose_2"></div>
+                    <div class="propose_text">
+
+                        <span class="step_num">2</span><br>Attach photos to proposals from photo album in the iPad.
+
+                    </div>
+                </div>
+                <div class="propose_step">
+                    <div class="propose_3"></div>
+                    <div class="propose_text">
+
+                        <span class="step_num">3</span><br>You can also set BGM for each proposal from the music library of your iPad.
+
+                    </div>
+                </div>
+                <div class="propose_step odd">
+                    <div class="propose_4"></div>
+                    <div class="propose_text">
+
+                        <span class="step_num">4</span><br>When it's ready, propose actually like the movie!
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="section10">
+
+        <div class="wrapper">
+
+            <div id="taja-container">
+                <div id="taja_title">iTaja Practice</div>
+                <div id="taja_text">You can improve your typing speed and accuracy using this app.<br>It works in both ways you hold your phone. Daily practice report will help you see how you improve your typing skill. </div>
+
+            </div>
+            <div id="taja_usage"></div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="section11">
+
+        <div class="wrapper extended">
+            <div id="trigger_nav"></div>
+            <div id="bcard">
+
+                <P class="contact">CONTACT ME</P>
+                <p class="email">sungjun.cha<span id="provider"> @gmail.com</span></p>
+                <p class="message"> Newly done works will be added soon,<br> hopefully.</p>
+                
+            </div>
+            <p id="copyright">&copy; Sungjun Cha 2010 - 2017</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="js/vivus.min.js"></script>
+    <script src="js/turn.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+    
+</html>

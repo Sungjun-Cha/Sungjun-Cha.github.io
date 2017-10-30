@@ -235,6 +235,17 @@ $(function () {
 
         })
         .addTo(scrollMagicController)
+    
+    var navi_color = new ScrollMagic.Scene({
+
+            triggerElement: "#trigger_nav",
+            offset: 420,
+            reverse: true
+        })
+    .setTween("#nav", 0.3, {
+            background: "#fc6"
+        }).setPin("#trigger_nav").addTo(scrollMagicController);
+    
 //        .addIndicators({name: "flip"});
 
 //    $('.bxslider').bxSlider({

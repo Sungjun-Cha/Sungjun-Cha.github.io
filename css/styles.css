@@ -3,6 +3,105 @@ body {
     
     font-family: "helvetica neue", arial, sans-serif;
 }
+
+ #nav {
+                position:fixed;
+                height: 84px;
+            /*    display: block;*/
+                top: 0px;
+                width: 100%;
+                z-index: 9999;
+/*                background-color: #555;*/
+            }
+
+            .nav_wrapper {
+                display: block;
+/*                width: 1024px;*/
+                margin: auto;
+                
+                width: 1024px;
+                
+            }
+
+
+
+            #nav div a.home {
+                display: inline-block;
+            /*    width: 360px;*/
+                height: 84px;
+            /*    padding-left: 20px;*/
+                line-height: 84px;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: black;
+                margin-left: 20px;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+            /*    overflow: hidden;*/
+                display: inline-block;
+                position: relative;
+                top: -60px;
+                float: right;
+                margin-right: 0px;
+                margin-top: 0px;
+            }
+
+            ul.link li {
+                margin-right: 12px;
+                display: inline-block;
+                list-style-type: none;
+            }
+
+            ul.link li a {
+
+                border-radius: 36px;
+            /*    display: block;*/
+                color: black;
+                text-align: center;
+                padding: 12px 16px;
+                text-decoration: none;
+            /*    width: 120px;*/
+                height: 36px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                line-height: 36px;
+                border: 2px solid rgba(0,0,0, 0);
+
+
+            }
+
+            /* Change the link color to #111 (black) on hover */
+            ul.link li a:hover {
+                background-color: white;
+                border: 2px solid rgba(0,0,0, 0.3);
+                color: black;
+            }
+
+            li a:active {
+                background-color: white;
+                border: 1px solid white;
+                color: black;
+            }
+
+            ul.link li a.currentPage {
+                background-color: white;
+                border: 1px solid white;
+                color: black;
+                cursor: default;
+            }
+
+        
+        
+
+
+
+
+
 .landing {
     height: 1080px;
 }
@@ -22,17 +121,20 @@ body {
 .content {
     margin-left: auto;
     margin-right: auto; 
-    width: 408px;
-    margin-bottom: -50px;
+    width: 600px;
+    height: 600px;  
+/*    margin-bottom: -50px;*/
 /*    height: 440px;*/
 /*    background: orange;*/
 }
 
-#logo {
-/*    width: 100%;*/
-/*    height: 100%;*/
+#logo img {
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-/*    padding-top: 140px;*/
+    display: block;
+    margin: 0 auto;
+    padding-top: 60px;
 /*   background: olive; */
 }
 #trigger_thank {
@@ -1236,6 +1338,9 @@ object#svg1 {
     background-repeat: no-repeat;
 }
 
+#trigger_nav {
+    min-height: 1px;
+}
 #bcard {
     width: 440px;
     height: 240px;
@@ -1290,7 +1395,7 @@ object#svg1 {
 }
 
 #copyright {
-    margin: 64% auto 0;
+    margin: 64% auto 42px;
     text-align: center;
     color: saddlebrown;
     font-weight: 300;

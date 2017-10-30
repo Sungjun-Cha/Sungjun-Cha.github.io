@@ -1,0 +1,245 @@
+body {
+    font-family: "helvetica neue", arial, sans-serif;
+}
+
+#nav {
+    position:fixed;
+    height: 84px;
+    display: block;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+/*    background-color: #555;*/
+}
+
+.nav_wrapper {
+    display: block;
+    width: 1024px;
+    margin: auto;
+}
+
+
+
+#nav div a.home {
+    display: inline-block;
+/*    width: 360px;*/
+    height: 84px;
+/*    padding-left: 20px;*/
+    line-height: 84px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+/*    overflow: hidden;*/
+    display: inline-block;
+    position: relative;
+    top: -60px;
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+ul.link li {
+    margin-right: 12px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+ul.link li a {
+    
+    border-radius: 36px;
+/*    display: block;*/
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+/*    width: 120px;*/
+    height: 36px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 36px;
+    border: 2px solid rgba(255,255,255, 0);
+
+    
+}
+
+/* Change the link color to #111 (black) on hover */
+ul.link li a:hover {
+/*    background-color: white;*/
+    border: 2px solid rgba(255,255,255, 1);
+    color: white;
+}
+
+li a:active {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+ul.link li a.currentPage {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    cursor: default;
+}
+
+
+.container {
+    width: 100%;
+    height: 840px; 
+    background-color: ;
+    overflow: hidden;
+    padding-top: 140px;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+/*    top: 100px;*/
+
+}
+
+.phone {
+/*    float: left;*/
+    margin: 0px 80px 0;
+    width: 306px;
+    height: 640px;
+    border-radius: 32px;
+    background-color: white;
+    display: inline-block;
+    box-shadow: 4px 4px 28px rgba(0, 0, 0, 0.2), inset 0 0 6px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.screen {
+
+    background-color: black;
+    width: 293px;
+    height: 520px;
+    margin: 0 auto;
+    position: relative;
+    top: 64px;
+    left: 0px;
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+
+video {
+/*    object-fit: contain;*/
+    height: 518px;
+    border-radius: 4px;
+    margin: 1px 0 0 1px;
+}
+
+video.sponge {
+    width: 292px;
+    height: 518px;
+    border-radius: 4px;
+    margin: 2px 0 0 1px;
+}
+
+.content {
+    float: right;
+    position: relative;
+    top: -500px;
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 60px;
+    position: relative;
+    display: inline-block;
+}
+
+
+h1{
+    font-size: 48px;
+    margin: 16px 0;
+}
+
+.ixd_title {
+    width: 40%;
+    margin-left: 80px;
+    color: black;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.intro {
+    width: 40%;
+    margin-left: 80px;
+    display:inline-block;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.floatfix {
+    float: right;
+}
+.function {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.green {
+    background-color: darkseagreen;
+}
+
+.yellow {
+    background-color: #fcff55;
+}
+.red {
+    background-color: #da163b;
+}
+.aqua {
+    background-color: aquamarine;
+}
+
+.blue {
+    background-color: deepskyblue;
+} 
+
+button {
+    background-color: dodgerblue;
+    color: white;
+    letter-spacing: 1px;
+    width: 160px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
+    transition: box-shadow 0.2s;
+
+}
+
+button:hover {
+    
+    box-shadow: 0px 6px 28px rgba(0,0,0,0.3);
+
+}
+
+button a {
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+button a:visited {
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+p {
+    line-height: 1.5em;
+}
