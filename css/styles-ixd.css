@@ -241,5 +241,6 @@ button a:visited {
 }
 
 p {
+    width: 90%;
     line-height: 1.5em;
 }
